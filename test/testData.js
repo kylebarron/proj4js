@@ -897,6 +897,16 @@ var testPoints = [
     }
   },
   {
+    code: 'PROJCS["World_Cylindrical_Equal_Area",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Cylindrical_Equal_Area"],PARAMETER["False_Easting",0.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",0.0],PARAMETER["Standard_Parallel_1",0.0],UNIT["Meter",1.0]]',
+    ll: [10, 45],
+    xy: [1113194.9079327357, 4489858.8869480025]
+  },
+  {
+    code: { $schema: 'https://proj.org/schemas/v0.7/projjson.schema.json', type: 'ProjectedCRS', name: 'World_Cylindrical_Equal_Area', base_crs: { type: 'GeographicCRS', name: 'WGS 84', datum: { type: 'GeodeticReferenceFrame', name: 'World Geodetic System 1984', ellipsoid: { name: 'WGS 84', semi_major_axis: 6378137, inverse_flattening: 298.257223563 } }, coordinate_system: { subtype: 'ellipsoidal', axis: [{ name: 'Longitude', abbreviation: 'lon', direction: 'east', unit: { type: 'AngularUnit', name: 'Degree', conversion_factor: 0.0174532925199433 } }, { name: 'Latitude', abbreviation: 'lat', direction: 'north', unit: { type: 'AngularUnit', name: 'Degree', conversion_factor: 0.0174532925199433 } }] } }, conversion: { name: 'World_Cylindrical_Equal_Area', method: { name: 'Lambert Cylindrical Equal Area', id: { authority: 'EPSG', code: 9835 } }, parameters: [{ name: 'Latitude of 1st standard parallel', value: 0, unit: { type: 'AngularUnit', name: 'Degree', conversion_factor: 0.0174532925199433 }, id: { authority: 'EPSG', code: 8823 } }, { name: 'Longitude of natural origin', value: 0, unit: { type: 'AngularUnit', name: 'Degree', conversion_factor: 0.0174532925199433 }, id: { authority: 'EPSG', code: 8802 } }, { name: 'False easting', value: 0, unit: 'metre', id: { authority: 'EPSG', code: 8806 } }, { name: 'False northing', value: 0, unit: 'metre', id: { authority: 'EPSG', code: 8807 } }] }, coordinate_system: { subtype: 'Cartesian', axis: [{ name: 'Easting', abbreviation: 'E', direction: 'east', unit: 'metre' }, { name: 'Northing', abbreviation: 'N', direction: 'north', unit: 'metre' }] }, scope: 'Not known.', area: 'World.', bbox: { south_latitude: -90, west_longitude: -180, north_latitude: 90, east_longitude: 180 }, id: { authority: 'ESRI', code: 54034 } },
+    ll: [10, 45],
+    xy: [1113194.9079327357, 4489858.8869480025]
+  },
+  {
     code: 'PROJCS["Segara / NEIEZ",GEOGCS["Segara",DATUM["Gunung_Segara",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6613"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4613"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",110],PARAMETER["scale_factor",0.997],PARAMETER["false_easting",3900000],PARAMETER["false_northing",900000],AUTHORITY["EPSG","3000"],AXIS["X",EAST],AXIS["Y",NORTH]]',
     ll: [116.65547897884308, -0.6595605286983485],
     xy: [4638523.040740433, 827245.2586932715]
